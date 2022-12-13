@@ -1,0 +1,41 @@
+{
+  "name": "@bridge-ui/generator-bridge",
+  "version": "0.18.25",
+  "description": "Scaffolder for Bridge",
+  "bugs": {
+    "url": "https://github.com/apache-bridge/bridge-ui/issues"
+  },
+  "homepage": "https://github.com/apache-bridge/bridge-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache-bridge/bridge-ui.git"
+  },
+  "author": "Bridge",
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman",
+    "generator",
+    "bridge",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "yeoman-assert": "^3.1.0",
+    "yeoman-test": "^2.0.0"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "lodash": "^4.17.11",
+    "yeoman-generator": "^4.0.0",
+    "yosay": "^2.0.2"
+  },
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  }
+}

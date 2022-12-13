@@ -1,0 +1,39 @@
+{
+  "name": "@bridge-ui/plugin-chart-<%= packageName %>",
+  "version": "0.0.0",
+  "description": "Bridge Chart - <%= description %>",
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache-bridge/bridge-ui.git"
+  },
+  "keywords": [
+    "bridge"
+  ],
+  "author": "Bridge",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/apache-bridge/bridge-ui/issues"
+  },
+  "homepage": "https://github.com/apache-bridge/bridge-ui#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@bridge-ui/core": "^0.17.40",
+    "@bridge-ui/chart-controls": "^0.17.41"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "jest": "^26.0.1"
+  }
+}

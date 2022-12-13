@@ -1,0 +1,36 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "outDir": "../../build/lib",
+    "rootDir": "../../",
+    "emitDeclarationOnly": false,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "noEmit": false,
+    "baseUrl": "../../",
+    "paths": {
+      "@bridge-ui/core": ["./packages/bridge-ui-core/src"],
+      "@bridge-ui/chart-controls": [
+        "./packages/bridge-ui-chart-controls/src"
+      ],
+      "@bridge-ui/legacy-plugin-chart-*": [
+        "./plugins/legacy-plugin-chart-*/src"
+      ],
+      "@bridge-ui/legacy-preset-chart-*": [
+        "./plugins/legacy-preset-chart-*/src"
+      ],
+      "@bridge-ui/plugin-chart-*": ["./plugins/plugin-chart-*/src"],
+      "@bridge-ui/preset-chart-*": ["./plugins/preset-chart-*/src"],
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": [
+    "storybook",
+    "../**/src",
+    "../../plugins/**/src",
+  ]
+}
